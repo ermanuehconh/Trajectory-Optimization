@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>449</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="J1waypoint"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="J2waypoint"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="J3waypoint"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="J4waypoint"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="J5waypoint"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="J6waypoint"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="waypointsTable">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>J1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>J2</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>J3</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>J4</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>J5</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>J6</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="optimizeButton">
+     <property name="text">
+      <string>Optimize</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="backButton">
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

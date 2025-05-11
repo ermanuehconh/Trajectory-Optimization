@@ -1,0 +1,12 @@
+{
+    "files": [
+        "waypoints.ui",
+        "form.ui",
+        "main.py",
+        "main.qml",
+        "help.ui",
+        "trajectory.ui",
+        "results.ui",
+        "loading.ui"
+    ]
+}
