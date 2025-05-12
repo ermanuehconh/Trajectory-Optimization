@@ -1,0 +1,21 @@
+The program workflow is divided into multiple screens that guide the user step-by-step:
+• Waypoint Definition: Input joint positions (in degrees) for each waypoint
+using the six text boxes (J1–J6) and add them to a table. Rows can be deleted
+if needed.
+Note:Waypoints are defined with respect to the robot base frame
+• Trajectory Optimization: After defining at least two waypoints, the system
+performs optimization using CasADi to minimize joint velocity while avoiding
+obstacles.
+Note:
+Obstacles must be manually defined in the code (TrajectoryPlannerV1 0.py)
+before running the application. Obstacle positions are defined with respect to
+the robot base frame too.
+• Trajectory Preview: The optimized trajectory is shown in a table. Sliders
+allow the user to set acceleration and velocity percentages.
+Note: Both parameters are pre-set with default values designed to produce the
+most optimized trajectory possible according to the inserted points.
+• Trajectory Execution: The optimized trajectory can be sent to the robot
+using the “Send to Robot” button. Logging can be enabled via a checkbox to
+save voltage and current data.
+• Execution Feedback: After sending, a loading screen is displayed and then a
+results screen confirms if the trajectory was logged.
